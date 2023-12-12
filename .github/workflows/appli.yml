@@ -15,6 +15,9 @@ jobs:
         - name: Test front side
           run: ls -lA
 
+        - name: Uvicorn installation
+          run: pip install uvicorn fastapi
+
         - name: Appli Back
           run: uvicorn back:wsgi --reload
           #run: python wsgi.py
