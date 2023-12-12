@@ -1,0 +1,17 @@
+name: DS_P7_API
+
+on:
+ workflow_dispatch:
+ push:
+    branches[main,master]
+
+jobs:
+    built-and-test_apli:
+       runs-on: ubuntu-latest
+       steps: 
+        - name: checkout repository
+          uses: actions/checkout@v3
+
+        - name: Test front side
+          run: ls -lA
+       
