@@ -16,5 +16,6 @@ jobs:
           run: ls -lA
 
         - name: Appli Back
-          run: python wsgi.py
+          run: uvicorn back:wsgi --reload
+          #run: python wsgi.py
        
